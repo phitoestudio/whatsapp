@@ -1,0 +1,889 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Phitoe WhatsApp Marketing - Humanized WhatsApp Conversion System</title>
+  <meta name="description" content="Phitoe WhatsApp Marketing membantu bisnis membuat AI message generator, broadcast personal, follow up pipeline, reminder, closing assistant, dan reactivation campaign. Promo IDR 126,000.">
+  <meta name="keywords" content="Phitoe WhatsApp Marketing, WhatsApp marketing, WhatsApp Business API, broadcast WhatsApp, follow up pipeline, AI message generator, closing assistant">
+  <meta name="author" content="Phitoe">
+  <meta property="og:title" content="Phitoe WhatsApp Marketing - Promo IDR 126,000">
+  <meta property="og:description" content="Ubah percakapan WhatsApp menjadi konversi dengan komunikasi yang humanis, personal, dan terarah.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="phitoe-whatsapp-marketing-product-transparent.png">
+  <meta name="theme-color" content="#06120f">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Phitoe WhatsApp Marketing",
+    "description": "Sistem WhatsApp marketing untuk AI message generator, broadcast personal, follow up pipeline, reminder scheduler, closing assistant, dan reactivation campaign.",
+    "image": "phitoe-whatsapp-marketing-product-transparent.png",
+    "brand": { "@type": "Brand", "name": "Phitoe" },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "IDR",
+      "price": "126000",
+      "url": "https://lynk.id/yudtube/w4x8wkmq2dn7/checkout",
+      "availability": "https://schema.org/InStock"
+    }
+  }
+  </script>
+  <style>
+    :root {
+      --bg: #06120f;
+      --panel: rgba(255,255,255,.075);
+      --line: rgba(255,255,255,.15);
+      --text: #f7fff9;
+      --muted: #a8bdb4;
+      --green: #4df0a2;
+      --teal: #35dfcf;
+      --cyan: #58e6ff;
+      --gold: #ffd56a;
+      --blue: #5d9dff;
+      --ink: #06120f;
+      --shadow: 0 30px 90px rgba(0,0,0,.42);
+      --radius: 8px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--text);
+      background: var(--bg);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    body:before {
+      content: "";
+      position: fixed;
+      inset: -25%;
+      z-index: -4;
+      background:
+        radial-gradient(circle at 16% 18%, rgba(77,240,162,.30), transparent 26%),
+        radial-gradient(circle at 82% 14%, rgba(53,223,207,.24), transparent 28%),
+        radial-gradient(circle at 68% 82%, rgba(255,213,106,.16), transparent 30%),
+        radial-gradient(circle at 18% 80%, rgba(93,157,255,.20), transparent 30%),
+        linear-gradient(135deg, #06120f 0%, #0a201c 50%, #06120f 100%);
+      animation: aurora 16s ease-in-out infinite alternate;
+      filter: saturate(1.16);
+    }
+    body:after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -3;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+      background-size: 58px 58px;
+      mask-image: linear-gradient(to bottom, black, transparent 82%);
+    }
+    @keyframes aurora {
+      from { transform: translate3d(-2%, -1%, 0) rotate(0deg) scale(1); }
+      to { transform: translate3d(2%, 2%, 0) rotate(5deg) scale(1.06); }
+    }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+    button { font: inherit; }
+    #particles {
+      position: fixed;
+      inset: 0;
+      z-index: -2;
+      pointer-events: none;
+      opacity: .55;
+    }
+    .container { width: min(1180px, calc(100% - 40px)); margin: 0 auto; }
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      border-bottom: 1px solid rgba(255,255,255,.12);
+      background: rgba(6,18,15,.76);
+      backdrop-filter: blur(18px);
+    }
+    .nav-inner {
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 950;
+    }
+    .logo-img {
+      width: 44px;
+      height: 44px;
+      object-fit: contain;
+      border-radius: 8px;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .nav-links a:hover { color: var(--text); }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 48px;
+      padding: 0 18px;
+      border: 1px solid transparent;
+      border-radius: var(--radius);
+      font-weight: 900;
+      white-space: nowrap;
+      cursor: pointer;
+      transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary {
+      color: var(--ink);
+      background: linear-gradient(135deg, var(--gold), var(--green) 52%, var(--teal));
+      box-shadow: 0 18px 48px rgba(77,240,162,.23), inset 0 1px 0 rgba(255,255,255,.55);
+    }
+    .btn-ghost {
+      border-color: rgba(255,255,255,.18);
+      background: rgba(255,255,255,.07);
+      backdrop-filter: blur(16px);
+    }
+    .hero {
+      min-height: calc(100vh - 74px);
+      display: grid;
+      align-items: center;
+      padding: 72px 0 42px;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.02fr .98fr;
+      gap: 44px;
+      align-items: center;
+    }
+    .eyebrow, .mini-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      color: var(--green);
+      border: 1px solid rgba(77,240,162,.28);
+      background: rgba(77,240,162,.085);
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 850;
+    }
+    h1, h2, h3 { margin: 0; line-height: 1.05; letter-spacing: 0; }
+    h1 {
+      margin-top: 20px;
+      max-width: 890px;
+      font-size: clamp(42px, 7vw, 82px);
+    }
+    h2 { font-size: clamp(31px, 4vw, 54px); }
+    h3 { font-size: 21px; }
+    .gradient-text {
+      background: linear-gradient(100deg, var(--text), var(--green) 32%, var(--teal) 62%, var(--gold));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .lead {
+      max-width: 720px;
+      margin: 22px 0 0;
+      color: var(--muted);
+      font-size: clamp(17px, 2vw, 21px);
+    }
+    .proof-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; color: #dcf7ec; font-size: 13px; }
+    .proof-item {
+      border: 1px solid rgba(255,255,255,.13);
+      background: rgba(255,255,255,.06);
+      border-radius: 999px;
+      padding: 7px 11px;
+    }
+    .price-row { display: flex; flex-wrap: wrap; align-items: end; gap: 14px; margin: 28px 0 18px; }
+    .old-price { color: #849b91; text-decoration: line-through; font-size: 22px; font-weight: 750; }
+    .new-price { color: var(--gold); font-size: clamp(40px, 5vw, 60px); font-weight: 950; line-height: 1; }
+    .cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 18px; }
+    .countdown { display: grid; grid-template-columns: repeat(4, minmax(72px, 1fr)); gap: 10px; max-width: 460px; margin-top: 24px; }
+    .glass, .card, .stat, .timebox, .faq-item, .quote, .pricing-card, .dashboard, .before-after-card, .flow-node {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: linear-gradient(180deg, rgba(255,255,255,.095), rgba(255,255,255,.055));
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(18px);
+    }
+    .timebox { padding: 12px; text-align: center; }
+    .timebox strong { display: block; font-size: 25px; line-height: 1; }
+    .timebox span { color: var(--muted); font-size: 12px; }
+    .visual-stack {
+      position: relative;
+      min-height: 620px;
+      display: grid;
+      place-items: center;
+      perspective: 1200px;
+    }
+    .visual-stack:before {
+      content: "";
+      position: absolute;
+      width: 84%;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(77,240,162,.23), rgba(53,223,207,.17), transparent 64%);
+      filter: blur(10px);
+    }
+    .product {
+      position: relative;
+      z-index: 2;
+      width: min(610px, 100%);
+      filter: drop-shadow(0 34px 82px rgba(0,0,0,.48));
+      animation: floaty 5.5s ease-in-out infinite;
+    }
+    @keyframes floaty {
+      0%, 100% { transform: translateY(0) rotate(-1deg); }
+      50% { transform: translateY(-15px) rotate(1deg); }
+    }
+    .dashboard {
+      position: absolute;
+      right: -10px;
+      bottom: 22px;
+      z-index: 3;
+      width: min(430px, 84%);
+      padding: 16px;
+      transform: rotateX(9deg) rotateY(-12deg) rotateZ(1deg);
+      background: linear-gradient(135deg, rgba(8,30,25,.95), rgba(8,42,35,.84));
+    }
+    .dash-top { display: flex; justify-content: space-between; gap: 10px; align-items: center; margin-bottom: 14px; }
+    .dash-dots { display: flex; gap: 6px; }
+    .dash-dots span { width: 8px; height: 8px; border-radius: 50%; background: var(--green); opacity: .85; }
+    .dash-title { color: var(--muted); font-size: 12px; font-weight: 850; }
+    .dash-grid { display: grid; grid-template-columns: 1.2fr .8fr; gap: 10px; }
+    .dash-panel {
+      min-height: 86px;
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 8px;
+      background: rgba(255,255,255,.055);
+      padding: 12px;
+      overflow: hidden;
+    }
+    .bar { height: 8px; border-radius: 999px; margin: 9px 0; background: linear-gradient(90deg, var(--green), var(--teal)); }
+    .bar:nth-child(2) { width: 72%; }
+    .bar:nth-child(3) { width: 54%; background: linear-gradient(90deg, var(--blue), var(--gold)); }
+    .score-ring {
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      margin: 4px auto 0;
+      background: conic-gradient(var(--green) 0 78%, rgba(255,255,255,.12) 78% 100%);
+      color: var(--text);
+      font-weight: 950;
+      animation: pulse 1.8s ease-in-out infinite;
+    }
+    @keyframes pulse { 0%, 100% { transform: scale(.96); } 50% { transform: scale(1.06); } }
+    section { padding: 88px 0; }
+    .section-head { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 32px; }
+    .section-head p { max-width: 620px; margin: 0; color: var(--muted); }
+    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .card, .quote, .before-after-card { padding: 24px; }
+    .card, .quote, .pricing-card { transition: transform .22s ease, border-color .22s ease; }
+    .card:hover, .quote:hover, .pricing-card:hover { transform: translateY(-4px); border-color: rgba(77,240,162,.34); }
+    .icon {
+      width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 16px;
+      color: var(--ink);
+      border-radius: 8px;
+      background: linear-gradient(135deg, var(--green), var(--teal));
+      font-weight: 950;
+    }
+    .card p, .quote p, .before-after-card p { color: var(--muted); margin: 12px 0 0; }
+    .integration-cloud { display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; margin-top: 28px; }
+    .integration {
+      min-height: 74px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 10px;
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.06);
+      color: #dcf7ec;
+      font-weight: 850;
+      transition: transform .22s ease, border-color .22s ease, background .22s ease;
+    }
+    .integration:hover { transform: translateY(-4px); border-color: rgba(77,240,162,.44); background: rgba(77,240,162,.10); }
+    .stats-band {
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      background: linear-gradient(90deg, rgba(77,240,162,.10), rgba(53,223,207,.09), rgba(255,213,106,.10));
+    }
+    .stat { padding: 24px; text-align: center; }
+    .stat strong { display: block; color: var(--green); font-size: clamp(34px, 4vw, 48px); line-height: 1; }
+    .stat span { display: block; margin-top: 8px; color: var(--muted); }
+    .before-after { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .before-after-card.before { border-color: rgba(255,213,106,.28); }
+    .before-after-card.after { border-color: rgba(77,240,162,.32); }
+    .workflow-map { position: relative; display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; overflow: hidden; }
+    .workflow-map:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 5%;
+      right: 5%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--green), var(--teal), var(--gold), transparent);
+      animation: flowline 2.5s linear infinite;
+    }
+    @keyframes flowline { from { filter: hue-rotate(0deg); opacity: .55; } to { filter: hue-rotate(80deg); opacity: 1; } }
+    .flow-node { position: relative; z-index: 2; min-height: 122px; display: grid; align-content: center; padding: 18px; text-align: center; }
+    .flow-node strong { display: block; color: var(--green); margin-bottom: 6px; }
+    .check-list { padding: 0; margin: 18px 0 0; list-style: none; color: var(--muted); }
+    .check-list li { margin: 10px 0; }
+    .check-list li:before { content: "\2713"; color: var(--green); font-weight: 950; margin-right: 9px; }
+    .pricing-card { position: relative; overflow: hidden; padding: 32px; }
+    .pricing-card:before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(77,240,162,.15), rgba(53,223,207,.08), rgba(255,213,106,.13));
+      pointer-events: none;
+    }
+    .pricing-card > * { position: relative; z-index: 1; }
+    .pricing-layout { display: grid; grid-template-columns: .9fr 1.1fr; gap: 24px; align-items: center; }
+    .badge { display: inline-flex; color: var(--ink); background: linear-gradient(135deg, var(--gold), var(--green)); border-radius: 999px; padding: 7px 11px; font-size: 12px; font-weight: 950; }
+    .testimonial-wrap { overflow: hidden; }
+    .testimonial-track { display: flex; gap: 16px; animation: carousel 24s linear infinite; }
+    .quote { min-width: 360px; flex: 0 0 360px; }
+    @keyframes carousel { from { transform: translateX(0); } to { transform: translateX(calc(-360px * 3 - 48px)); } }
+    .faq { display: grid; gap: 12px; }
+    .faq-button {
+      width: 100%;
+      min-height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 0 18px;
+      color: var(--text);
+      background: transparent;
+      border: 0;
+      text-align: left;
+      font-weight: 900;
+      cursor: pointer;
+    }
+    .faq-button span:last-child { color: var(--green); font-size: 24px; }
+    .faq-content { max-height: 0; overflow: hidden; color: var(--muted); transition: max-height .26s ease; }
+    .faq-content p { margin: 0; padding: 0 18px 18px; }
+    .faq-item.active .faq-content { max-height: 230px; }
+    .final-cta {
+      text-align: center;
+      padding: 56px 28px;
+      background:
+        linear-gradient(135deg, rgba(77,240,162,.15), rgba(53,223,207,.08), rgba(255,213,106,.13)),
+        rgba(255,255,255,.065);
+    }
+    .final-cta p { max-width: 720px; margin: 16px auto 0; color: var(--muted); }
+    footer { padding: 34px 0 92px; color: var(--muted); border-top: 1px solid var(--line); }
+    .footer-inner { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    .wa-float {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 70;
+      width: 62px;
+      height: 62px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0 18px 42px rgba(66,240,168,.34);
+      border: 1px solid rgba(255,255,255,.38);
+    }
+    .wa-float img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .sticky-cta {
+      position: fixed;
+      left: 50%;
+      bottom: 18px;
+      z-index: 65;
+      width: min(640px, calc(100% - 112px));
+      transform: translateX(-50%) translateY(90px);
+      opacity: 0;
+      pointer-events: none;
+      transition: transform .25s ease, opacity .25s ease;
+    }
+    .sticky-cta.show { transform: translateX(-50%) translateY(0); opacity: 1; pointer-events: auto; }
+    .sticky-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 10px;
+      border: 1px solid rgba(255,255,255,.16);
+      border-radius: 10px;
+      background: rgba(6,18,15,.84);
+      backdrop-filter: blur(18px);
+      box-shadow: 0 18px 48px rgba(0,0,0,.38);
+    }
+    .sticky-inner strong { color: var(--gold); }
+    [data-aos] { opacity: 0; transform: translateY(24px); transition: opacity .72s ease, transform .72s ease; }
+    [data-aos].show { opacity: 1; transform: translateY(0); }
+    @media (max-width: 980px) {
+      .nav-links { display: none; }
+      .hero-grid, .pricing-layout, .before-after { grid-template-columns: 1fr; }
+      .visual-stack { min-height: 520px; }
+      .grid-3, .grid-4, .integration-cloud, .workflow-map { grid-template-columns: repeat(2, 1fr); }
+      .workflow-map:before { display: none; }
+      .section-head { display: block; }
+      .section-head p { margin-top: 12px; }
+      .dashboard { right: 0; bottom: 0; }
+    }
+    @media (max-width: 620px) {
+      .container { width: min(100% - 28px, 1180px); }
+      .nav-inner { min-height: 66px; }
+      .brand span:last-child { max-width: 170px; overflow: hidden; text-overflow: ellipsis; }
+      .nav .btn { display: none; }
+      .btn { width: 100%; min-height: 52px; }
+      .cta-row { width: 100%; }
+      .countdown, .grid-2, .grid-3, .grid-4, .integration-cloud, .workflow-map { grid-template-columns: 1fr 1fr; }
+      .card, .quote, .pricing-card, .before-after-card { padding: 18px; }
+      section { padding: 64px 0; }
+      .hero { padding: 42px 0 34px; }
+      .visual-stack { min-height: 430px; }
+      .product { width: 112%; max-width: none; }
+      .dashboard { width: 92%; padding: 12px; }
+      .quote { min-width: 300px; flex-basis: 300px; }
+      .sticky-cta { width: calc(100% - 92px); }
+      .sticky-inner { display: block; }
+      .sticky-inner span { display: block; margin-bottom: 8px; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="#home" class="brand" aria-label="Phitoe WhatsApp Marketing">
+        <img class="logo-img" src="logo.png" alt="Logo Phitoe">
+        <span>Phitoe WhatsApp</span>
+      </a>
+      <div class="nav-links">
+        <a href="#fitur">Fitur</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#pricing">Harga</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <a class="btn btn-primary" href="https://lynk.id/yudtube/w4x8wkmq2dn7/checkout" data-track="nav-buy">Beli Sekarang</a>
+    </div>
+  </nav>
+
+  <main id="home">
+    <header class="hero">
+      <div class="container hero-grid">
+        <div data-aos>
+          <span class="eyebrow">Humanized WhatsApp conversion system</span>
+          <h1>Ubah percakapan WhatsApp menjadi <span class="gradient-text">konversi yang terasa personal.</span></h1>
+          <p class="lead">Phitoe WhatsApp Marketing membantu bisnis membangun alur komunikasi dari perkenalan sampai closing dengan pesan yang natural, dekat, relevan, dan tetap profesional.</p>
+          <div class="proof-row">
+            <span class="proof-item">AI Message Generator</span>
+            <span class="proof-item">Personal Broadcast</span>
+            <span class="proof-item">Follow Up Pipeline</span>
+            <span class="proof-item">Official WhatsApp API</span>
+          </div>
+          <div class="price-row" aria-label="Harga promo">
+            <span class="old-price">IDR 326,000</span>
+            <span class="new-price">IDR 126,000</span>
+          </div>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="https://lynk.id/yudtube/w4x8wkmq2dn7/checkout" data-track="hero-buy">Beli Sekarang</a>
+            <a class="btn btn-ghost" href="https://wa.me/+6285647678910" data-track="hero-whatsapp">Konsultasi WhatsApp</a>
+          </div>
+          <div class="countdown" aria-label="Countdown promo">
+            <div class="timebox"><strong id="days">00</strong><span>Hari</span></div>
+            <div class="timebox"><strong id="hours">00</strong><span>Jam</span></div>
+            <div class="timebox"><strong id="minutes">00</strong><span>Menit</span></div>
+            <div class="timebox"><strong id="seconds">00</strong><span>Detik</span></div>
+          </div>
+        </div>
+        <div class="visual-stack" data-aos>
+          <img class="product" src="phitoe-whatsapp-marketing-product-transparent.png" alt="Mockup produk 3D Phitoe WhatsApp Marketing">
+          <div class="dashboard" aria-label="Mockup dashboard 3D">
+            <div class="dash-top">
+              <div class="dash-dots"><span></span><span></span><span></span></div>
+              <div class="dash-title">Campaign Health</div>
+            </div>
+            <div class="dash-grid">
+              <div class="dash-panel">
+                <strong>Reply & Closing</strong>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
+              <div class="dash-panel">
+                <strong>Score</strong>
+                <div class="score-ring">78</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="fitur">
+      <div class="container">
+        <div class="section-head" data-aos>
+          <h2>Bukan sekadar broadcast massal.</h2>
+          <p>Phitoe menggabungkan otomatisasi dengan sentuhan manusiawi agar pesan tidak terasa kaku, memaksa, atau seperti robot.</p>
+        </div>
+        <div class="grid-3">
+          <article class="card" data-aos><div class="icon">AI</div><h3>AI Message Generator</h3><p>Buat draf pesan otomatis berdasarkan nama pelanggan, segmentasi, konteks produk, tujuan, dan gaya bahasa.</p></article>
+          <article class="card" data-aos><div class="icon">BC</div><h3>Broadcast Personal</h3><p>Kirim pesan ke banyak kontak dengan sentuhan 1-on-1 melalui variabel nama, produk, dan segmentasi customer.</p></article>
+          <article class="card" data-aos><div class="icon">FU</div><h3>Follow Up Pipeline</h3><p>Siapkan pesan lanjutan yang sopan, empatik, dan memberi nilai tambah tanpa membuat prospek merasa ditekan.</p></article>
+          <article class="card" data-aos><div class="icon">RS</div><h3>Reminder Scheduler</h3><p>Otomatis ingatkan konsultasi, invoice, flash sale, stok menipis, event, dan webinar tepat waktu.</p></article>
+          <article class="card" data-aos><div class="icon">CL</div><h3>Closing Assistant</h3><p>Dorong keputusan beli dengan kalimat konversi yang halus, ramah, dan meyakinkan.</p></article>
+          <article class="card" data-aos><div class="icon">RC</div><h3>Reactivation Campaign</h3><p>Bangunkan pelanggan lama dan prospek dingin dengan pesan segar yang terasa personal.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head" data-aos>
+          <h2>Platform & ekosistem komunikasi.</h2>
+          <p>Landing page ini dibuat dengan nuansa SaaS premium untuk menonjolkan otomasi, data customer, dan WhatsApp Business API resmi.</p>
+        </div>
+        <div class="integration-cloud" data-aos>
+          <div class="integration">WhatsApp API</div>
+          <div class="integration">OpenAI</div>
+          <div class="integration">Gemini</div>
+          <div class="integration">TikTok</div>
+          <div class="integration">WordPress</div>
+          <div class="integration">Notion</div>
+          <div class="integration">CRM</div>
+          <div class="integration">Invoice</div>
+          <div class="integration">Customer Tag</div>
+          <div class="integration">Broadcast</div>
+          <div class="integration">Reminder</div>
+          <div class="integration">Analytics</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-band">
+      <div class="container grid-4">
+        <div class="stat" data-aos><strong data-count="10000">0</strong><span>alur komunikasi</span></div>
+        <div class="stat" data-aos><strong data-count="98" data-suffix="%">0</strong><span>lebih cepat dari manual</span></div>
+        <div class="stat" data-aos><strong data-count="6">0</strong><span>fitur konversi utama</span></div>
+        <div class="stat" data-aos><strong data-count="24">0</strong><span>/7 scheduler campaign</span></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head" data-aos>
+          <h2>Before vs After</h2>
+          <p>Dari pesan promosi kaku menjadi customer journey WhatsApp yang lebih ramah, relevan, dan mudah diukur.</p>
+        </div>
+        <div class="before-after">
+          <article class="before-after-card before" data-aos>
+            <span class="mini-pill">Before</span>
+            <h3>Pesan terasa massal dan memaksa</h3>
+            <p>Pelanggan merasa dijual-jualin, follow up terlambat, reminder berantakan, database dingin, dan closing bergantung pada mood admin.</p>
+          </article>
+          <article class="before-after-card after" data-aos>
+            <span class="mini-pill">After</span>
+            <h3>Pesan terasa personal dan terarah</h3>
+            <p>AI membuat draf, broadcast dipersonalisasi, follow up sopan, reminder otomatis, closing halus, dan pelanggan lama bisa diaktifkan kembali.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="workflow">
+      <div class="container">
+        <div class="section-head" data-aos>
+          <h2>How It Works</h2>
+          <p>Enam alur dibuat untuk mendampingi prospek dari tahap sapaan sampai reaktivasi database.</p>
+        </div>
+        <div class="workflow-map">
+          <div class="flow-node" data-aos><strong>Generate</strong><span>AI menyusun pesan natural.</span></div>
+          <div class="flow-node" data-aos><strong>Broadcast</strong><span>Kirim personal ke segmen.</span></div>
+          <div class="flow-node" data-aos><strong>Follow Up</strong><span>Ingatkan tanpa memaksa.</span></div>
+          <div class="flow-node" data-aos><strong>Reminder</strong><span>Jadwal, invoice, promo.</span></div>
+          <div class="flow-node" data-aos><strong>Closing</strong><span>Bantu prospek yakin beli.</span></div>
+          <div class="flow-node" data-aos><strong>Reactivation</strong><span>Aktifkan database lama.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="dashboard">
+      <div class="container">
+        <div class="section-head" data-aos>
+          <h2>Kendali penuh dalam satu dashboard.</h2>
+          <p>Kelola komunikasi pemasaran tanpa ribet melalui struktur menu yang intuitif dan mudah dipakai tim.</p>
+        </div>
+        <div class="grid-3">
+          <article class="card" data-aos><div class="icon">01</div><h3>Dashboard Utama</h3><p>Pantau performa kampanye, balasan, keterbacaan, dan konversi secara real-time.</p></article>
+          <article class="card" data-aos><div class="icon">02</div><h3>Kontak & Segmentasi</h3><p>Kelola database dan kelompokkan audiens berdasarkan kebutuhan, minat, atau status prospek.</p></article>
+          <article class="card" data-aos><div class="icon">03</div><h3>Template & AI</h3><p>Simpan template dan buat variasi pesan dengan tone soft selling, friendly, profesional, urgent, atau customer care.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head" data-aos>
+          <h2>Keamanan WhatsApp Business API resmi.</h2>
+          <p>Phitoe diposisikan untuk integrasi API resmi, bukan scraping atau otomasi WhatsApp Web yang berisiko.</p>
+        </div>
+        <div class="grid-3">
+          <article class="card" data-aos><div class="icon">API</div><h3>Lebih stabil</h3><p>Pengiriman broadcast menjadi lebih aman dan sesuai standar platform ketika memakai API resmi.</p></article>
+          <article class="card" data-aos><div class="icon">SE</div><h3>Lebih patuh</h3><p>Mengurangi risiko nomor bermasalah akibat metode tidak sah dan menjaga keberlangsungan bisnis.</p></article>
+          <article class="card" data-aos><div class="icon">GD</div><h3>Privasi dijaga</h3><p>Workflow dirancang untuk komunikasi yang relevan, terarah, dan lebih menghargai kenyamanan pelanggan.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head" data-aos>
+          <h2>Bonus yang didapat</h2>
+          <p>Selain sistem utama, pelanggan mendapat struktur komunikasi yang siap dipakai untuk mempercepat campaign.</p>
+        </div>
+        <div class="grid-4">
+          <article class="card" data-aos><h3>Template Soft Selling</h3><p>Kalimat penawaran yang tidak membuat pelanggan merasa ditekan.</p></article>
+          <article class="card" data-aos><h3>Follow Up Script</h3><p>Urutan pesan lanjutan yang sopan dan tetap berorientasi closing.</p></article>
+          <article class="card" data-aos><h3>Reminder Pack</h3><p>Template invoice, event, konsultasi, promo, dan stok menipis.</p></article>
+          <article class="card" data-aos><h3>Reactivation Kit</h3><p>Pesan untuk mengaktifkan pelanggan lama dan prospek dingin.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing">
+      <div class="container">
+        <div class="pricing-card" data-aos>
+          <div class="pricing-layout">
+            <div>
+              <span class="badge">Promo Launch</span>
+              <h2 style="margin-top:16px">Phitoe WhatsApp Marketing</h2>
+              <p class="lead">Komunikasi lebih personal, pelanggan lebih nyaman, closing lebih mudah.</p>
+              <div class="price-row">
+                <span class="old-price">IDR 326,000</span>
+                <span class="new-price">IDR 126,000</span>
+              </div>
+              <div class="cta-row">
+                <a class="btn btn-primary" href="https://lynk.id/yudtube/w4x8wkmq2dn7/checkout" data-track="pricing-buy">Beli Sekarang</a>
+                <a class="btn btn-ghost" href="https://wa.me/+6285647678910" data-track="pricing-whatsapp">Tanya via WhatsApp</a>
+              </div>
+            </div>
+            <div>
+              <h3>Termasuk dalam paket</h3>
+              <ul class="check-list">
+                <li>AI Message Generator dengan tone of voice fleksibel</li>
+                <li>Broadcast campaign yang dipersonalisasi</li>
+                <li>Follow Up Pipeline tanpa terkesan memaksa</li>
+                <li>Reminder Scheduler otomatis untuk invoice, promo, dan event</li>
+                <li>Closing Assistant dan Reactivation Campaign</li>
+                <li>Konsep integrasi WhatsApp Business API resmi</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimoni">
+      <div class="container">
+        <div class="section-head" data-aos>
+          <h2>Testimoni carousel</h2>
+          <p>Kesan pengguna saat WhatsApp tidak lagi sekadar channel chat, tapi alur konversi yang lebih tertata.</p>
+        </div>
+        <div class="testimonial-wrap" data-aos>
+          <div class="testimonial-track">
+            <article class="quote"><h3>Raka - Seller</h3><p>"Follow up jadi lebih sopan dan tidak terasa mengejar pelanggan."</p></article>
+            <article class="quote"><h3>Dina - UMKM</h3><p>"Broadcast dengan nama dan produk terasa jauh lebih personal."</p></article>
+            <article class="quote"><h3>Fajar - Marketer</h3><p>"Template closing-nya membantu tim sales bicara lebih halus tapi tetap konversi."</p></article>
+            <article class="quote"><h3>Nadia - Admin</h3><p>"Reminder invoice dan jadwal bikin pekerjaan harian lebih ringan."</p></article>
+            <article class="quote"><h3>Arman - Agency</h3><p>"Tone of voice fleksibel memudahkan adaptasi untuk banyak jenis brand."</p></article>
+            <article class="quote"><h3>Yulia - Founder</h3><p>"Database lama bisa disentuh lagi tanpa terdengar seperti spam."</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+        <div class="section-head" data-aos>
+          <h2>Garansi & FAQ</h2>
+          <p>Pertanyaan penting sebelum mulai memakai Phitoe WhatsApp Marketing.</p>
+        </div>
+        <div class="faq">
+          <div class="faq-item active" data-aos>
+            <button class="faq-button" type="button"><span>Apakah ini seperti spam broadcast?</span><span>+</span></button>
+            <div class="faq-content"><p>Tidak. Fokus Phitoe adalah komunikasi personal, relevan, dan humanis melalui segmentasi, tone of voice, dan alur customer journey.</p></div>
+          </div>
+          <div class="faq-item" data-aos>
+            <button class="faq-button" type="button"><span>Apakah mendukung WhatsApp Business API?</span><span>+</span></button>
+            <div class="faq-content"><p>Ya, konsep implementasinya diarahkan pada WhatsApp Business API resmi agar lebih aman, stabil, dan patuh dibanding scraping atau otomasi WhatsApp Web.</p></div>
+          </div>
+          <div class="faq-item" data-aos>
+            <button class="faq-button" type="button"><span>Tone apa saja yang tersedia?</span><span>+</span></button>
+            <div class="faq-content"><p>Soft selling, friendly & personal, profesional, urgent tapi sopan, dan customer care untuk edukasi atau penanganan keluhan.</p></div>
+          </div>
+          <div class="faq-item" data-aos>
+            <button class="faq-button" type="button"><span>Bagaimana cara membeli?</span><span>+</span></button>
+            <div class="faq-content"><p>Klik tombol Beli Sekarang, selesaikan checkout di Lynk.id, lalu ikuti instruksi akses produk setelah pembayaran.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="final-cta glass" data-aos>
+          <span class="eyebrow">Komunikasi lebih personal, closing lebih mudah</span>
+          <h2 style="margin-top:16px">Buat WhatsApp menjadi mesin relasi dan konversi.</h2>
+          <p>Gunakan Phitoe WhatsApp Marketing untuk menyusun pesan yang lebih natural, follow up lebih sopan, dan campaign yang lebih terukur.</p>
+          <div class="cta-row" style="justify-content:center">
+            <a class="btn btn-primary" href="https://lynk.id/yudtube/w4x8wkmq2dn7/checkout" data-track="final-buy">Beli Sekarang - IDR 126,000</a>
+            <a class="btn btn-ghost" href="https://wa.me/+6285647678910" data-track="final-whatsapp">Chat WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>&copy; 2026 Phitoe WhatsApp Marketing. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <div class="sticky-cta" id="stickyCta" aria-hidden="true">
+    <div class="sticky-inner">
+      <span>Promo Phitoe WhatsApp: <strong>IDR 126,000</strong></span>
+      <a class="btn btn-primary" href="https://lynk.id/yudtube/w4x8wkmq2dn7/checkout" data-track="sticky-buy">Beli Sekarang</a>
+    </div>
+  </div>
+  <a class="wa-float" href="https://wa.me/+6285647678910" aria-label="WhatsApp" data-track="floating-whatsapp">
+    <img src="wa.png" alt="WhatsApp">
+  </a>
+
+  <script>
+    const promoEnd = new Date();
+    promoEnd.setDate(promoEnd.getDate() + 2);
+    promoEnd.setHours(23, 59, 59, 999);
+    function pad(value) {
+      return String(value).padStart(2, "0");
+    }
+    function updateCountdown() {
+      const now = new Date();
+      const distance = Math.max(0, promoEnd - now);
+      const days = Math.floor(distance / 86400000);
+      const hours = Math.floor((distance % 86400000) / 3600000);
+      const minutes = Math.floor((distance % 3600000) / 60000);
+      const seconds = Math.floor((distance % 60000) / 1000);
+      document.getElementById("days").textContent = pad(days);
+      document.getElementById("hours").textContent = pad(hours);
+      document.getElementById("minutes").textContent = pad(minutes);
+      document.getElementById("seconds").textContent = pad(seconds);
+    }
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    document.querySelectorAll(".faq-button").forEach((button) => {
+      button.addEventListener("click", () => {
+        button.closest(".faq-item").classList.toggle("active");
+      });
+    });
+
+    const counted = new WeakSet();
+    function animateCount(element) {
+      const target = Number(element.dataset.count || 0);
+      const suffix = element.dataset.suffix || "";
+      const duration = 1200;
+      const start = performance.now();
+      function tick(now) {
+        const progress = Math.min(1, (now - start) / duration);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        const value = Math.round(target * eased);
+        element.textContent = target >= 1000 ? value.toLocaleString("id-ID") + "+" : value + suffix;
+        if (progress < 1) requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+    }
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+          entry.target.querySelectorAll("[data-count]").forEach((counter) => {
+            if (!counted.has(counter)) {
+              counted.add(counter);
+              animateCount(counter);
+            }
+          });
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.14 });
+    document.querySelectorAll("[data-aos], .stats-band").forEach((element) => revealObserver.observe(element));
+
+    const stickyCta = document.getElementById("stickyCta");
+    window.addEventListener("scroll", () => {
+      stickyCta.classList.toggle("show", window.scrollY > 620);
+    }, { passive: true });
+
+    const canvas = document.getElementById("particles");
+    const ctx = canvas.getContext("2d");
+    let particles = [];
+    function resizeCanvas() {
+      canvas.width = window.innerWidth * devicePixelRatio;
+      canvas.height = window.innerHeight * devicePixelRatio;
+      ctx.setTransform(devicePixelRatio, 0, 0, devicePixelRatio, 0, 0);
+      particles = Array.from({ length: Math.min(90, Math.floor(window.innerWidth / 16)) }, () => ({
+        x: Math.random() * window.innerWidth,
+        y: Math.random() * window.innerHeight,
+        r: Math.random() * 1.8 + .4,
+        vx: (Math.random() - .5) * .24,
+        vy: (Math.random() - .5) * .24,
+        a: Math.random() * .55 + .18
+      }));
+    }
+    function drawParticles() {
+      ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+      particles.forEach((p) => {
+        p.x += p.vx;
+        p.y += p.vy;
+        if (p.x < 0 || p.x > window.innerWidth) p.vx *= -1;
+        if (p.y < 0 || p.y > window.innerHeight) p.vy *= -1;
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fillStyle = "rgba(77,240,162," + p.a + ")";
+        ctx.fill();
+      });
+      requestAnimationFrame(drawParticles);
+    }
+    resizeCanvas();
+    drawParticles();
+    window.addEventListener("resize", resizeCanvas);
+
+    document.querySelectorAll("[data-track]").forEach((element) => {
+      element.addEventListener("click", () => {
+        console.log("CTA click:", element.dataset.track);
+      });
+    });
+  </script>
+</body>
+</html>
